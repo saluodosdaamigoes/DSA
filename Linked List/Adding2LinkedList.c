@@ -20,15 +20,15 @@ void createLinkedList1(struct node *LL1, int x)
         start1 = first;
         return;
     }
-        struct node *end1 = start1;
-        while (end1->next != NULL)
-        {
-            end1 = end1->next;
-        }
-        LL1 = (struct node *)malloc(sizeof(struct node));
-        LL1->data = x;
-        end1->next = LL1;
-        LL1->next = NULL;
+    struct node *end1 = start1;
+    while (end1->next != NULL)
+    {
+        end1 = end1->next;
+    }
+    LL1 = (struct node *)malloc(sizeof(struct node));
+    LL1->data = x;
+    end1->next = LL1;
+    LL1->next = NULL;
 }
 
 void display1(struct node *LL1)
@@ -51,15 +51,15 @@ void createLinkedList2(struct node *LL2, int x)
         start2 = first;
         return;
     }
-        struct node *end2 = start2;
-        while (end2->next != NULL)
-        {
-            end2 = end2->next;
-        }
-        LL2 = (struct node *)malloc(sizeof(struct node));
-        LL2->data = x;
-        end2->next = LL2;
-        LL2->next = NULL;
+    struct node *end2 = start2;
+    while (end2->next != NULL)
+    {
+        end2 = end2->next;
+    }
+    LL2 = (struct node *)malloc(sizeof(struct node));
+    LL2->data = x;
+    end2->next = LL2;
+    LL2->next = NULL;
 }
 
 void display2(struct node *LL2)
